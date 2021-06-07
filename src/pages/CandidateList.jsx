@@ -58,16 +58,3 @@ export default function CandidateList() {
     </div>
   );
 }
-/*
-     "id": 1,
-      "email": "string",
-      "isActive": true,
-      "firstName": "denemedenem",
-      "lastName": "stereeing",
-      "nationalityId": "22222222222",
-      "dateOfBirth": "1999-12-12",
-      "isEmailVerified": false,
-      "pictureUrl": null
-
-
-*/
