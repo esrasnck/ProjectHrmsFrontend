@@ -10,7 +10,7 @@ export default function JobList() {
 
     let jobTitleService = new JobTitleService()
 
-    jobTitleService.getJobTitles().then(result=> setJobLists(result.data))
+    jobTitleService.getJobTitles().then(result=> setJobLists(result.data.data))
     console.log(jobLists)
   },[]);
 

@@ -8,12 +8,12 @@ import JobAdvertisementList from "../pages/JobAdvertisementList"
 export default function Section() {
     return (
         <div>
-        {/* 
-       <EmployerList></EmployerList> 
-        <CandidateList></CandidateList>
-        <JobList></JobList> */}
-        <JobAdvertisementList></JobAdvertisementList>
-       
+        {/*    <CandidateList></CandidateList>
+        <EmployerList></EmployerList> 
+     <JobList></JobList> 
+        */}
+   
+           <JobAdvertisementList></JobAdvertisementList>
         </div>
     )
 }
