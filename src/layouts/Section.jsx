@@ -1,8 +1,6 @@
 import React from 'react';
-import JobList from "../pages/JobList";
-import CandidateList from "../pages/CandidateList";
-import EmployerList from "../pages/EmployerList";
-import JobAdvertisementList from "../pages/JobAdvertisementList"
+
+import JobAdvertisementList from "../components/DinamicComponents/pages/JobAdvertisementList";
 
 
 export default function Section() {

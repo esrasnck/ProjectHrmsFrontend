@@ -6,4 +6,9 @@ export default class JobTitleService{
         return axios.get("http://localhost:8080/api/jobtitles/getall")
     }
 
+    getByJobTitleId(params){
+
+        return axios.get(`http://localhost:8080/api/jobtitles/getByJobTitleId?jobTitleId=${params}`)
+    }
+
 } 

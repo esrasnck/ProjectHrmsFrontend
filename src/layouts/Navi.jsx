@@ -1,5 +1,10 @@
 import React from "react";
-import { Button, Container, Dropdown, Menu, Icon } from "semantic-ui-react";
+import { Container, Menu, Icon } from "semantic-ui-react";
+import CandidateButton  from "../components/NavBarComponents/CandidateButton";
+import EmployerButton from "../components/NavBarComponents/EmployerButton";
+import EmployeeButton from "../components/NavBarComponents/EmployeeButton";
+import SignUpButton from "../components/NavBarComponents/SignUpButton";
+import LoginButton from "../components/NavBarComponents/LoginButton";
 
 export default function Navi() {
 
@@ -15,6 +20,7 @@ export default function Navi() {
        // iş arayana göre listeler
     }
 
+
   return (
     <div>
       <Menu inverted fixed="top">
@@ -22,25 +28,31 @@ export default function Navi() {
           <Menu.Item name="hire a helper">
             <Icon name="hire a helper" size="large" /> HMRS
           </Menu.Item>
+
           <Menu.Item onClick={candidate}>
-            <Icon  name="address card outline" size="large" />{" "}
-            Candidates{" "}
+            
+         <CandidateButton></CandidateButton>
+            
+          </Menu.Item>
+          <Menu.Item onClick={employer}>
+
+           <EmployerButton></EmployerButton>
           </Menu.Item>
 
-          <Menu.Item onClick={employer}>
-            <Icon  name="user" size="large" /> Employers{" "}
-          </Menu.Item>
           <Menu.Item onClick={employee}>
-            <Icon  name="id badge" size="large" />{" "}
-            Employees{" "}
+          <EmployeeButton></EmployeeButton>
           </Menu.Item>
         
           <Menu.Menu position="right">
           <Menu.Item>
-          <Button >Login</Button>
+
+           <LoginButton></LoginButton>
+
           </Menu.Item>
             <Menu.Item>
-              <Button >Sign Up</Button>
+
+             <SignUpButton></SignUpButton>
+             
             </Menu.Item>
           </Menu.Menu>
         </Container>

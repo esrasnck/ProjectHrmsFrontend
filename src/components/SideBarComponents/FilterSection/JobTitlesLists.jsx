@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {Dropdown } from 'semantic-ui-react';
-import JobTitleService from "../../Services/jobTitleService";
+import JobTitleService from "../../../Services/jobTitleService";
 
 export default function JobTitlesLists() {
   const [jobTitleLists, setjobTitleLists] = useState([]);

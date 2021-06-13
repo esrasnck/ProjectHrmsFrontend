@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CandidateService from "../Services/candidateService";
+import CandidateService from "../../../Services/candidateService";
 import { Table } from "semantic-ui-react";
 
 export default function CandidateList() {
@@ -10,7 +10,7 @@ export default function CandidateList() {
   useEffect(() => {
     let candidateService = new CandidateService();
 
-    candidateService.getEmployers().then((result) => {
+    candidateService.getCandidates().then((result) => {
       setcandidateLists(result.data.data);
     });
   }, []);
